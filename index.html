@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="main.js"></script>
+    <h1 class="mainheading">JS Handson - 4 : Array </h1>
+
+    <div class="boxes">
+        <h2>Ques. 1 Find the Product. </h2>
+        <pre class="code">
+        const Find_Prod = (array, N) => 
+            {
+              prod =1
+              for (let i = 0 ; i < array.length;i++){
+                prod = prod * array[i]
+              }
+              return prod
+            };
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 2  Find the Sum </h2>
+        <pre class="code">
+        const Find_Sum = (array, N) => 
+            {
+              sum=0;
+              for(let i =0 ; i < array.length ; i++ )
+              {
+                sum = sum + array[i]
+              }
+              return sum;
+            };
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div class="boxes">
+        <h2>Ques. 3  Count Occurrences </h2>
+        <pre class="code">
+            const findCount = (N, K, Arr) => 
+            {   
+                count = 0 ;
+                for (let i =0 ; i < Arr.length ; i++){
+                  if (K === Arr[i] )
+                  {
+                    count = count +1;
+                  }
+                }
+                return count;
+            };
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+   
+    <div class="boxes">
+        <h2>Ques. 4  Even Odd </h2>
+        <pre class="code">
+            const findEvenOdd = (N, Arr) => 
+            {
+              B =[];
+              evenSum =0 ;
+              oddSum =0 ;
+              
+              for (let i = 0 ; i < Arr.length ; i++){
+                if (Arr[i] % 2 === 0){
+                  evenSum += Arr[i]
+                  B[0]=evenSum;
+                }
+                else{
+                  oddSum += Arr[i]
+                  B[1]=oddSum;
+                }
+                
+              }
+              return B;
+                
+            };
+             
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+       
+    <div class="boxes">
+        <h2>Ques. 5 Find whether the number is present or not</h2>
+        <pre class="code">
+        const Find_Num = (array,N,M) => 
+            {
+              str=''
+              for (let i =0 ; i< array.length ; i++){
+                if (M === array[i]){
+                  
+                  str= "YES"
+                  break;
+                }
+                else {
+                  str='NO'
+                }
+              }
+              return str;
+            };
+                     </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+     
+    <div class="boxes">
+        <h2>Ques. 6 Higher Age</h2>
+        <pre class="code">
+        const highAge = (N, Arr) => 
+            {
+                higherAge = [];
+                for (let i =0 ; i <Arr.length ; i++){
+                  if (Arr[i] >= 18 ){
+                    higherAge.push(Arr[i])
+                  }
+                }
+                return higherAge;
+            };
+                     </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div class="boxes">
+        <h2>Ques. 7. Increment the Array Elements</h2>
+        <pre class="code">
+        const Inc_Arr = (array,N) => 
+            {
+              for (let  i = 0 ; i < array.length ; i++){
+                console.log(array[i]+1)
+              }
+            
+            };
+                     </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 8. Pass or Fail</h2>
+        <pre class="code">
+        const isAllPass = (N, Arr) => 
+            {   
+                str='';
+                for (let i = 0 ; i < Arr.length ; i++){
+                  if (Arr[i] < 32){
+                    str='NO'
+                    break;
+                  }
+                  else{
+                    str='YES'
+                  }
+                }
+                return str;
+            };
+             
+                     </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 9. Unique Color Shirt</h2>
+        <pre class="code">
+       
+            -----
+
+                     </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Ques. 10. Min and Max</h2>
+        <pre class="code"> 
+        function arrayMin(arr) {
+             min = arr[0];
+             for (let i = 0 ; i < arr.length ; i++){
+               if (arr[i] < min ){
+                 min = arr[i];
+               }
+             }
+             return min;
+           
+        }
+           
+        function arrayMax(arr) {
+             max = arr[0];
+             for (let i = 0 ; i < arr.length ; i++){
+               if (arr[i] > max ){
+                 max = arr[i];
+               }
+             }
+             return max;
+           
+        }
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    
+    <div class="boxes">
+        <h2>Ques. 11. Birthday Game</h2>
+        <pre class="code"> 
+       
+
+            ----
+        </pre>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
