@@ -241,9 +241,26 @@
     <div class="boxes">
         <h2>Ques. 11. Birthday Game</h2>
         <pre class="code"> 
-       
-
-            ----
+          function Birthday_Game(arr,D ,M) {
+            let tempArr =[];
+            let count = 0 ;
+            
+            for (let i =0 ; i < arr.length - M+1 ; i++ ){// i= 0
+            let sum = 0 ;
+              for (let j = i ; j < M+i ; j++ ){
+               
+                sum = arr[j] + sum ;
+                
+              }
+              
+              if ( sum === D){
+                count = count + 1; 
+              }
+            }
+           
+           return count ;
+          }
+         
         </pre>
     </div>
 
